@@ -24,21 +24,21 @@ route has been called. This information can be accessed at :/8000/metrics
 
 You can try the bolt version of the service (running on AWS ECS) by quering the following :
 
-http://18.236.109.94:8000/snippets
+http:/xxx.xxx.xxx.xxx:8000/snippets
 
-http://18.236.109.94:8000/metrics
+http://xxx.xxx.xxx.xxx:8000/metrics
 
-http://18.236.109.94:8000/status
+http://xxx.xxx.xxx.xxx:8000/status
 
 see the query section below for format of url for GET,POST, DELETE
 
 You can try the badger version of the service  (running on AWS ECS) by quering the following :
 
-http://34.218.222.174:8000/snippets
+http://xxx.xxx.xxx.xxx:8000/snippets
 
-http://34.218.222.174:8000/metrics
+http://xxx.xxx.xxx.xxx:8000/metrics
 
-http://34.218.222.174:8000/status
+http://xxx.xxx.xxx.xxx:8000/status
 
 see the query section below for format of url for GET,POST, DELETE
 
