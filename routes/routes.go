@@ -9,7 +9,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	dbpkg "github.com/textioHQ/interview-peter-lenson/database"
+	dbpkg "github.com/plenson/SnippetService/database"
 	"log"
 	"net/http"
 )
