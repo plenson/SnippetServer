@@ -62,9 +62,9 @@ Insure that your $GOPATH is setup in default configuration of $HOME/go.
 
 ```
 $cd $HOME/go
-$mkdir -p src/github.com/textioHQ
-$cd src/github.com/textioHQ
-$git clone https://github.com/textioHQ/interview-peter-lenson.git
+$mkdir -p src/github.com/plenson
+$cd src/github.com/plenson
+$git clone https://github.com/plenson/SnippetServer.git
 
 ```
 Code Considerations
