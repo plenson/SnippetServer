@@ -1,6 +1,6 @@
 FROM golang:1.10.2 as builder
 
-WORKDIR /go/src/github.com/textioHQ/interview-peter-lenson
+WORKDIR /go/src/github.com/plenson/SnippetService
 RUN mkdir database
 ADD database/databasebger.go database/database.go
 ADD common common
