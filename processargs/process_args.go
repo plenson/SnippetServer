@@ -6,7 +6,7 @@ package processargs
 import (
 	"flag"
 	"fmt"
-	cmnpkg "github.com/textioHQ/interview-peter-lenson/common"
+	cmnpkg "github.com/plenson/SnippetService/common"
 	"log"
 	"os"
 	"path"
