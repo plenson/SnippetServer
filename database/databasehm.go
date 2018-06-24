@@ -4,7 +4,7 @@
 package database
 
 import (
-	cmnpkg "github.com//plenson/SnippetService/common"
+	cmnpkg "github.com/plenson/SnippetService/common"
 	utpkg "github.com/plenson/SnippetService/utilities"
 	"github.com/xyproto/simplebolt"
 	"log"
