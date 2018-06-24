@@ -4,7 +4,7 @@
 package database
 
 import (
-	cmnpkg "github.com/textioHQ/interview-peter-lenson/common"
+	cmnpkg "github.com/plenson/SnippetService/common"
 	"github.com/zippoxer/bow"
 	"log"
 )
