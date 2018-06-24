@@ -242,7 +242,7 @@ Unit test
 
 API-GATEWAY
 
-I've looked at setting up an API gateway in front of the service allowing me to vary the backend... but I'm running short of time to get this implimented.
+I've looked at setting up an API gateway in front of the service allowing me to vary the backend.
 
 
 Sharding
