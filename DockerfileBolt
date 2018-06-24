@@ -1,0 +1,33 @@
+FROM golang:1.10.2 as builder
+
+WORKDIR /go/src/github.com/textioHQ/interview-peter-lenson
+RUN mkdir database
+ADD database/databasehm.go database/database.go
+ADD common common
+ADD utilities utilities
+ADD routes routes
+ADD processargs processargs
+
+# Get additional dependencies
+RUN go get -d -v github.com/gorilla/handlers
+RUN go get -d -v github.com/gorilla/mux
+RUN go get -d -v github.com/satori/go.uuid
+RUN go get -d -v github.com/xyproto/pinterface
+RUN go get -d -v github.com/xyproto/simplebolt
+
+RUN go get -d -v github.com/prometheus/client_golang/prometheus/promhttp
+RUN go get -d -v github.com/prometheus/client_golang/prometheus/promauto
+RUN go get -d -v github.com/prometheus/client_golang/prometheus
+
+COPY main.go  .
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
+
+FROM alpine:latest
+RUN apk --no-cache add ca-certificates
+WORKDIR /root/
+COPY --from=builder /go/src/github.com/textioHQ/interview-peter-lenson/main .
+ENV BOLTDB=bolt.db
+ENV HASHMAP=snippets
+ENV PORT=8000
+ENV VOL="/Data"
+CMD ["/bin/sh", "-c", "./main ${BOLTDB} ${HASHMAP} ${PORT} ${VOL}"]
