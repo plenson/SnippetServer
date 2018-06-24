@@ -4,8 +4,8 @@
 package database
 
 import (
-	cmnpkg "github.com/textioHQ/interview-peter-lenson/common"
-	utpkg "github.com/textioHQ/interview-peter-lenson/utilities"
+	cmnpkg "github.com//plenson/SnippetService/common"
+	utpkg "github.com/plenson/SnippetService/utilities"
 	"github.com/xyproto/simplebolt"
 	"log"
 	"os"
