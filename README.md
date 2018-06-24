@@ -47,8 +47,7 @@ Note, docker container footprints are much less 15 MB
 Cloud Hosting
 ----------------
 The services above are hosted on AWS ECS using a micro instance type. Currently there is no load balancing enabled.
-The docker containers used in the solutions are stored in ECR. I did attempt to build and deploy the containers via AWS code pipeline but ran into a deployment issue and so I build them locally and uploaded to ECR. Task definitions were created on 
-ECS to deploy containers.
+The docker containers used in the solutions are stored in ECR. 
 
 Monitoring & Metrics
 --------------------
