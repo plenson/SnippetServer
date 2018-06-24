@@ -5,9 +5,9 @@
 package main
 
 import (
-	dbpkg "github.com/textioHQ/interview-peter-lenson/database"
-	pspkg "github.com/textioHQ/interview-peter-lenson/processargs"
-	rtpkg "github.com/textioHQ/interview-peter-lenson/routes"
+	dbpkg "github.com/plenson/SnippetService/database"
+	pspkg "github.com/plenson/SnippetService/processargs"
+	rtpkg "github.com/plenson/SnippetService/routes"
 	"log"
 	"net/http"
 	"os"
