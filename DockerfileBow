@@ -22,7 +22,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
 FROM alpine:latest
 RUN apk --no-cache add ca-certificates
 WORKDIR /root/
-COPY --from=builder /go/src/github.com/textioHQ/interview-peter-lenson/main .
+COPY --from=builder /go/src/github.com/plenson/SnippetService/main .
 ENV BOWDB="ignore"
 ENV HASHMAP="ignore"
 ENV PORT=8000
